@@ -50,8 +50,12 @@ BOARD_HAVE_SAMSUNG_WIFI := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/grandneove3g/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := grandneove3g_hw02_defconfig
+TARGET_KERNEL_CONFIG := hybris-gndneove3g_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/grandneove3g
+
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 
 # Resolution
 TARGET_SCREEN_HEIGHT := 800
@@ -62,6 +66,8 @@ TARGET_OTA_ASSERT_DEVICE := GT-I9060I,grandneove3g
 
 # RIL
 BOARD_RIL_CLASS += ../../../device/samsung/grandneove3g/ril
+
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/samsung/grandneove3g/charger/images
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/grandneove3g/rootdir/fstab.sc8830

@@ -53,7 +53,7 @@ lib/libmorpho_easy_hdr.so
 
 # ION
 #lib/libmemoryheapion.so
-lib/libion.so
+lib/libion_sprd.so
 
 # Codecs
 lib/libomx_avcdec_hw_sprd.so

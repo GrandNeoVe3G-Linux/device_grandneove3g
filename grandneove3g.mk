@@ -38,6 +38,36 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media/mediaserver.rc:system/etc/init/mediaserver.rc
 
+
+# Ubuntu Touch
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/70-grandneove3g.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/display.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(LOCAL_PATH)/ubuntu/bluetooth/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf \
+    $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
+    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base
+
+# Ubuntu Touch additional packages
+PRODUCT_PACKAGES += \
+    libmedia_compat_layer \
+    minimediaservice \
+    libaudioflingerglue \
+    libminisf \
+    miniafservice
+
+MINIMEDIA_SENSORSERVER_DISABLE := 1
+
+# telepathy-ofono quirks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.t-o.quirk.forcesink=sink.primary_output  \
+    ro.t-o.quirk.forcesource=source.fast_input
+
+#Ubuntu Touch: USB port handling
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf
+
 # Rootdir files
 PRODUCT_PACKAGES += \
 	init.sc8830.rc \

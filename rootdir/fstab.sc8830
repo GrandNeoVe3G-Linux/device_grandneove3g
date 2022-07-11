@@ -11,8 +11,8 @@
 
 # Boot partitions
 /dev/block/platform/sprd-sdhci.3/by-name/KERNEL   /boot	       emmc defaults										recoveryonly
-/dev/block/platform/sprd-sdhci.3/by-name/HIDDEN   /preload     ext4 defaults										recoveryonly
-/dev/block/platform/sprd-sdhci.3/by-name/RECOVERY /recovery    emmc defaults										recoveryonly
+#/dev/block/platform/sprd-sdhci.3/by-name/HIDDEN   /preload     ext4 defaults										recoveryonly
+#/dev/block/platform/sprd-sdhci.3/by-name/RECOVERY /recovery    emmc defaults										recoveryonly
 
 # VOLD
 /devices/sprd-sdhci.0/mmc_host/mmc1*		  auto         auto defaults										voldmanaged=extSdCard:auto,encryptable=userdata
