@@ -68,6 +68,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
     $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf
 
+# Fix offline charge
+
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Rootdir files
 PRODUCT_PACKAGES += \
 	init.sc8830.rc \

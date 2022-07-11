@@ -50,12 +50,8 @@ BOARD_HAVE_SAMSUNG_WIFI := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/grandneove3g/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := hybris-gndneove3g_defconfig
+TARGET_KERNEL_CONFIG := halium-gndneove3g_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/grandneove3g
-
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 
 # Resolution
 TARGET_SCREEN_HEIGHT := 800
