@@ -207,9 +207,9 @@
     <integer name="config_sms_authorization_timeout_ms">0</integer>
     <integer name="config_alertDialogController">0</integer>
     <integer name="config_qs_num_rows_landscape_default">2</integer>
-    <integer name="config_recentDefaultDur">300</integer>
-    <integer name="config_recentExitDur">450</integer>
-    <integer name="config_notificationsBatteryReallyFullARGB">0xFF00FF00</integer>
+    <add-resource type="string" name="config_recentDefaultDur">300</add-resource>
+    <add-resource type="string" name="config_recentExitDur">450</add-resource>
+    <add-resource type="string" name="config_notificationsBatteryReallyFullARGB">0xFF00FF00</add-resource>
     <integer name="wifi_hotspot_security_type">4</integer>
     <integer name="thumbnail_width_tv">240</integer>
     <integer name="preferences_left_pane_weight">4</integer>

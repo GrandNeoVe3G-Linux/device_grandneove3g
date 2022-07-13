@@ -246,7 +246,7 @@
     <bool name="config_windowOverscanByDefault">false</bool>
     <bool name="config_windowSwipeToDismiss">false</bool>
     <bool name="config_preferenceFragmentClipToPadding">true</bool>
-    <bool name="config_doze_enabled_by_default">false</bool>
+    <add-resource type="string" name="config_doze_enabled_by_default">false</add-resource>
     <bool name="config_dateformat">false</bool>
     <bool name="config_usb_data_unlock">false</bool>
     <bool name="operator_custom_sim_icon">false</bool>

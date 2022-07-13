@@ -56,6 +56,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	gps.xml \
 
+# Fix offline charge
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 # WiFi
 PRODUCT_PACKAGES += \
 	wpa_supplicant.conf \
